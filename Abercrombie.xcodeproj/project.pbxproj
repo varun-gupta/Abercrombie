@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8B2B70061DD6699A0063B669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B70051DD6699A0063B669 /* AppDelegate.swift */; };
-		8B2B70081DD6699A0063B669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B70071DD6699A0063B669 /* ViewController.swift */; };
 		8B2B700B1DD6699A0063B669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B70091DD6699A0063B669 /* Main.storyboard */; };
 		8B2B700D1DD6699A0063B669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B700C1DD6699A0063B669 /* Assets.xcassets */; };
 		8B2B70101DD6699A0063B669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2B700E1DD6699A0063B669 /* LaunchScreen.storyboard */; };
 		8B2B701B1DD6699B0063B669 /* AbercrombieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B701A1DD6699B0063B669 /* AbercrombieTests.swift */; };
+		8B2B70261DD66EA50063B669 /* AbMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B70251DD66EA50063B669 /* AbMainTableViewController.swift */; };
+		8B33599F1DD680CB00C28225 /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33599E1DD680CB00C28225 /* dataModel.swift */; };
+		8B3359A11DD7FB6E00C28225 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3359A01DD7FB6E00C28225 /* defaultImage.png */; };
+		8BA90D9F1DD67C2000A97F74 /* ABTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		8B2B70021DD6699A0063B669 /* Abercrombie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abercrombie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B70051DD6699A0063B669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B2B70071DD6699A0063B669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B2B700A1DD6699A0063B669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B2B700C1DD6699A0063B669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2B700F1DD6699A0063B669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		8B2B70161DD6699B0063B669 /* AbercrombieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbercrombieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2B701A1DD6699B0063B669 /* AbercrombieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbercrombieTests.swift; sourceTree = "<group>"; };
 		8B2B701C1DD6699B0063B669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2B70251DD66EA50063B669 /* AbMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbMainTableViewController.swift; sourceTree = "<group>"; };
+		8B33599E1DD680CB00C28225 /* dataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
+		8B3359A01DD7FB6E00C28225 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		8B2B6FF91DD6699A0063B669 = {
 			isa = PBXGroup;
 			children = (
+				8B3359A01DD7FB6E00C28225 /* defaultImage.png */,
 				8B2B70041DD6699A0063B669 /* Abercrombie */,
 				8B2B70191DD6699B0063B669 /* AbercrombieTests */,
 				8B2B70031DD6699A0063B669 /* Products */,
@@ -78,11 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				8B2B70051DD6699A0063B669 /* AppDelegate.swift */,
-				8B2B70071DD6699A0063B669 /* ViewController.swift */,
 				8B2B70091DD6699A0063B669 /* Main.storyboard */,
 				8B2B700C1DD6699A0063B669 /* Assets.xcassets */,
 				8B2B700E1DD6699A0063B669 /* LaunchScreen.storyboard */,
 				8B2B70111DD6699B0063B669 /* Info.plist */,
+				8B2B70251DD66EA50063B669 /* AbMainTableViewController.swift */,
+				8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */,
+				8B33599E1DD680CB00C28225 /* dataModel.swift */,
 			);
 			path = Abercrombie;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 				8B2B70101DD6699A0063B669 /* LaunchScreen.storyboard in Resources */,
 				8B2B700D1DD6699A0063B669 /* Assets.xcassets in Resources */,
 				8B2B700B1DD6699A0063B669 /* Main.storyboard in Resources */,
+				8B3359A11DD7FB6E00C28225 /* defaultImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2B70081DD6699A0063B669 /* ViewController.swift in Sources */,
+				8B2B70261DD66EA50063B669 /* AbMainTableViewController.swift in Sources */,
+				8BA90D9F1DD67C2000A97F74 /* ABTableViewCell.swift in Sources */,
+				8B33599F1DD680CB00C28225 /* dataModel.swift in Sources */,
 				8B2B70061DD6699A0063B669 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +400,7 @@
 				8B2B70211DD6699B0063B669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2B70221DD6699B0063B669 /* Build configuration list for PBXNativeTarget "AbercrombieTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +409,7 @@
 				8B2B70241DD6699B0063B669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

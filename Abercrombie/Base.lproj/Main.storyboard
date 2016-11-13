@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="421"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sE4-hm-I9F" id="fhT-jv-Qhx">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="421"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="420.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yfx-xR-EDJ" userLabel="MainStack">
@@ -98,8 +98,8 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yfx-xR-EDJ" secondAttribute="bottom" constant="-0.5" id="WSO-1a-zkX"/>
                                         <constraint firstAttribute="topMargin" secondItem="yfx-xR-EDJ" secondAttribute="top" id="Z2V-VR-4si"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="yfx-xR-EDJ" secondAttribute="bottom" id="aDG-4c-UbE"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yfx-xR-EDJ" secondAttribute="trailing" id="xHl-6h-zv6"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="yfx-xR-EDJ" secondAttribute="leading" id="yHQ-8F-k69"/>
                                     </constraints>
@@ -122,10 +122,46 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="WsX-68-zTj"/>
+                    <connections>
+                        <segue destination="zHO-pI-ihH" kind="show" identifier="showWebView" id="lUB-D5-peO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czn-R6-mnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1751" y="418"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="qKP-XT-jvd">
+            <objects>
+                <viewController id="zHO-pI-ihH" customClass="webViewController" customModule="Abercrombie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fin-5y-AGJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTf-0G-Mc1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kxX-N5-6aO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-ql-nbP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gZp-ql-nbP" firstAttribute="top" secondItem="fin-5y-AGJ" secondAttribute="bottom" constant="-20" id="0cA-TB-3Zi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gZp-ql-nbP" secondAttribute="trailing" constant="-20" id="Kj5-Oa-99b"/>
+                            <constraint firstItem="gZp-ql-nbP" firstAttribute="bottom" secondItem="eTf-0G-Mc1" secondAttribute="top" id="SmA-Uf-5HT"/>
+                            <constraint firstItem="gZp-ql-nbP" firstAttribute="leading" secondItem="kxX-N5-6aO" secondAttribute="leadingMargin" constant="-20" id="h9Z-PG-FVe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="gZp-ql-nbP" id="xVg-3H-8Sk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFo-eN-Qal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="418"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vyL-l6-afQ">

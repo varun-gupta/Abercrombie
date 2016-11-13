@@ -16,6 +16,7 @@
 		8B33599F1DD680CB00C28225 /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33599E1DD680CB00C28225 /* dataModel.swift */; };
 		8B3359A11DD7FB6E00C28225 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3359A01DD7FB6E00C28225 /* defaultImage.png */; };
 		8BA90D9F1DD67C2000A97F74 /* ABTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */; };
+		8BC584681DD9115D0001D283 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC584671DD9115D0001D283 /* webViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8B33599E1DD680CB00C28225 /* dataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
 		8B3359A01DD7FB6E00C28225 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
 		8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABTableViewCell.swift; sourceTree = "<group>"; };
+		8BC584671DD9115D0001D283 /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				8B2B70251DD66EA50063B669 /* AbMainTableViewController.swift */,
 				8BA90D9E1DD67C2000A97F74 /* ABTableViewCell.swift */,
 				8B33599E1DD680CB00C28225 /* dataModel.swift */,
+				8BC584671DD9115D0001D283 /* webViewController.swift */,
 			);
 			path = Abercrombie;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC584681DD9115D0001D283 /* webViewController.swift in Sources */,
 				8B2B70261DD66EA50063B669 /* AbMainTableViewController.swift in Sources */,
 				8BA90D9F1DD67C2000A97F74 /* ABTableViewCell.swift in Sources */,
 				8B33599F1DD680CB00C28225 /* dataModel.swift in Sources */,

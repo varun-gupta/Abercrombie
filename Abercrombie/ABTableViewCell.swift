@@ -31,12 +31,6 @@ class ABTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func configureCell(dataModelObj: dataModel)  {
         
@@ -64,6 +58,7 @@ class ABTableViewCell: UITableViewCell {
         }
         if let lblStr = dataModelObj.detailString {
             detailLabel.attributedText = lblStr.htmlAttributedString()
+            detailLabel.textAlignment = .Center
         } else {
             detailLabel.hidden = true
         }
@@ -88,6 +83,7 @@ class ABTableViewCell: UITableViewCell {
             womenBtn.hidden = true
         }
         setNeedsLayout()
+        layoutIfNeeded()
     }
     
     func menBtnClicked() {
